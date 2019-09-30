@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Interpolation
 {
-    public static Vector2 Interpolation(List<Vector2> list, float t)
+    public static Vector2 Lerp(List<Vector2> list, float t)
     {
 
         float range = 1f / (list.Count - 1);

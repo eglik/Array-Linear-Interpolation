@@ -23,7 +23,7 @@ public class Test : MonoBehaviour
 
         for (int i = 0; i < 1920; i++)
         {
-            var pos = Interpolation.Interpolation(horizontal, i / 1920f);
+            var pos = Interpolation.Lerp(horizontal, i / 1920f);
             texture2D.SetPixel((int)pos.x, (int)pos.y, Color.black);
             texture2D.SetPixel((int)pos.x, (int)pos.y + 1, Color.black);
             texture2D.SetPixel((int)pos.x + 1, (int)pos.y, Color.black);
